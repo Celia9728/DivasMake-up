@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Comparador</title>
+    <meta
+      name="author"
+      content="Celia"
+    />
+    <meta
+      name="description"
+      content="Página donde comparar las caracteristicas de nuestros productos"
+    />
+    <meta
+      name="keywords"
+      content="Vegan Cruelty-Free, precio, color"
+    />
+    <link
+      rel="icon"
+      href="imagenes/logo.png"
+    />
+    <style>
+      nav{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Cabecera de la página donde aparece el logo y la navegacion -->
+    <header>
+      <nav>
+        <a href="index.html"
+          ><img
+            src="imagenes/logo.png"
+            alt="Logo DivasMakeUp"
+            width="100"
+            height="100"
+            title="Logo DivasMakeUp"
+            id="inicio"
+        /></a>
+        <a href="presentacion.html">Presentación</a>
+        <a href="pagina1.html">¿Dónde estamos?</a>
+        <a href="pagina2.html">¿Quiénes somos?</a>
+        <a href="pagina3.html">Tienda</a>
+        <a href="pagina4.html">Comparador</a>
+        <a href="pagina5.html">Presupuesto</a>
+        <a href="pagina6.html">Contacto</a>
+        <a href="pagina7.html">Preguntas Frecuentes</a>
+      </nav>
+      <hr />
+    </header>
+    <!-- Cuerpo de la página donde aparece el contenido -->
+    <main>
+      <!-- Tablas de comparación de productos -->
+      <h1>Comparativa de productos</h1>
+      <!-- Tabla de comparación de los ojos -->
+      <table border="1px">
+        <caption>
+          <strong>Ojos</strong>
+        </caption>
+        <thead>
+          <tr>
+            <th rowspan="2">
+              <img
+                src="imagenes/Ilustracion11_1.png"
+                alt="logo"
+                width="100px"
+                height="100"
+              />
+            </th>
+            <th>Hypnôse Drama</th>
+            <th>Lash Idole</th>
+          </tr>
+          <tr>
+            <th>
+              <img
+                src="imagenes/ojos_hypnose_drama.png"
+                alt="Hypnôse Drama"
+                width="50"
+                height="100"
+              />
+            </th>
+            <th>
+              <img
+                src="imagenes/ojos_lash_idole.png"
+                alt="Lash Idole"
+                width="80"
+                height="100"
+              />
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Volumen</th>
+            <td>17 veces más volumen</td>
+            <td>
+              Volumen revelador, todas las pestañas quedan definidas, extendidas
+              y alargadas
+            </td>
+          </tr>
+          <tr>
+            <th>Duración</th>
+            <td>24 horas</td>
+            <td>12 horas</td>
+          </tr>
+          <tr>
+            <th>Color</th>
+            <td>
+              <input
+                type="color"
+                value="#000000"
+                disabled
+              />
+            </td>
+            <td>
+              <input
+                type="color"
+                value="#5E3D31"
+                disabled
+              />
+              <input
+                type="color"
+                value="#000000"
+                disabled
+              />
+            </td>
+          </tr>
+          <tr>
+            <th>Fortalecimiento</th>
+            <td>Pestañas fortalecidas gracias al 2% de bonding complex</td>
+            <td>&#10060;</td>
+          </tr>
+          <tr>
+            <th>Apto ojos sensibles</th>
+            <td>&#9989;</td>
+            <td>&#10060;</td>
+          </tr>
+          <tr>
+            <th>Vegan Cruelty-Free</th>
+            <td>&#10060;</td>
+            <td>&#9989;</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th>Precio</th>
+            <th>28,00 &#8364;</th>
+            <th>26,60 &#8364;</th>
+          </tr>
+        </tfoot>
+      </table>
+      <br />
+      <hr />
+      <br />
+      <!-- Tabla de comparación de los labios -->
+      <table border="1px">
+        <caption>
+          <strong>Labios</strong>
+        </caption>
+        <thead>
+          <tr>
+            <th rowspan="2">
+              <img
+                src="imagenes/Ilustracion11_1.png"
+                alt="logo"
+                width="100px"
+                height="100"
+              />
+            </th>
+            <th>Gloss Bomb Stix - Gloss en stick brillo intenso</th>
+            <th>Gloss Bomb Cream - Brillo de labios lacado de color mate</th>
+          </tr>
+          <tr>
+            <th>
+              <img
+                src="imagenes/labios_fenty.png"
+                alt="Gloss Bomb Stix"
+                width="50"
+                height="100"
+              />
+            </th>
+            <th>
+              <img
+                src="imagenes/P10051031_principal.avif"
+                alt="Gloss Bomb Cream"
+                width="100"
+                height="100"
+              />
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th rowspan="2">Brillo</th>
+            <td rowspan="2">Intenso</td>
+            <td>Mate</td>
+          </tr>
+          <tr>
+            <td>Intenso combinándolo con Gloss Bomb2</td>
+          </tr>
+          <tr>
+            <th rowspan="2">Duración</th>
+            <td rowspan="2">8 horas</td>
+            <td>4 horas.</td>
+          </tr>
+          <tr>
+            <td>12 horas combinándolo con Gloss Bomb2</td>
+          </tr>
+          <tr>
+            <th>Color</th>
+            <td>
+              <input
+                type="color"
+                value="#C9767C"
+                disabled
+              />
+              <input
+                type="color"
+                value="#7A3C4A"
+                disabled
+              />
+              <input
+                type="color"
+                value="#BC0118"
+                disabled
+              />
+            </td>
+            <td>
+              <input
+                type="color"
+                value="#623425"
+                disabled
+              />
+              <input
+                type="color"
+                value="#B68792"
+                disabled
+              />
+              <input
+                type="color"
+                value="#742524"
+                disabled
+              />
+            </td>
+          </tr>
+          <tr>
+            <th>Vitaminas</th>
+            <td>
+              <ul>
+                <li>Enriquecido con escualano</li>
+                <li>Vitamina E</li>
+                <li>Manteca de karité</li>
+                <li>Aceite de semilla de kiwi</li>
+              </ul>
+            </td>
+            <td>
+              <ul>
+                <li>Contiene vitamina A</li>
+                <li>Ligera fragancia de melocotón y vainilla</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <th>Vegan Cruelty-Free</th>
+            <td>&#10060;</td>
+            <td>&#9989;</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th>Precio</th>
+            <th>23,99 &#8364;</th>
+            <th>22,99 &#8364;</th>
+          </tr>
+        </tfoot>
+      </table>
+      <br />
+      <hr />
+      <br />
+      <!-- Tabla de comparación de las mascarillas -->
+      <table border="1px">
+        <caption>
+          <strong>Cara</strong>
+        </caption>
+        <thead>
+          <tr>
+            <th rowspan="2">
+              <img
+                src="imagenes/Ilustracion11_1.png"
+                alt="logo"
+                width="100px"
+                height="100"
+              />
+            </th>
+            <th>
+              Mascarilla Facial Hydra Bomb Super Hidratante Calmante con Ácido
+              Hialurónico
+            </th>
+            <th>
+              Mascarilla Facial Hydra Bomb Super Hidratante Matificante con
+              Ácido Hialurónico
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <img
+                src="imagenes/cara_mascarilla_rosa.png"
+                alt="mascarilla rosa"
+                width="60"
+                height="100"
+              />
+            </th>
+            <th>
+              <img
+                src="imagenes/cara_mascarilla_verde.png"
+                alt="marcarilla verde"
+                width="60"
+                height="100"
+              />
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th rowspan="2">Efecto piel</th>
+            <td>
+              <ul>
+                <li>Calmante</li>
+                <li>Suavizante</li>
+              </ul>
+            </td>
+            <td>
+              <ul>
+                <li>Matificante</li>
+                <li>Reductor de poros</li>
+                <li>Elimina brillos</li>
+                <li>Reequilibrante</li>
+              </ul>
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="2">
+              <ul>
+                <li>Refrescante</li>
+                <li>Hidratante</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <th>Formato</th>
+            <td colspan="2">Mascarilla</td>
+          </tr>
+          <tr>
+            <th>Formulación</th>
+            <td>&#9989;</td>
+            <td>&#9989;</td>
+          </tr>
+          <tr>
+            <th rowspan="2">Ingrediente estrella</th>
+            <td>Camomila</td>
+            <td>Té verde</td>
+          </tr>
+          <tr>
+            <td colspan="2">Ácido hialurónico</td>
+          </tr>
+          <tr>
+            <th>Tipo de piel</th>
+            <td>Sensible, seca</td>
+            <td>Mixta o grasa</td>
+          </tr>
+
+          <tr>
+            <th>Vegan Cruelty-Free</th>
+            <td>&#9989;</td>
+            <td>&#10060;</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th>Precio</th>
+            <th>2,49 &#8364;</th>
+            <th>2,49 &#8364;</th>
+          </tr>
+        </tfoot>
+      </table>
+      <br />
+      <hr />
+      <br />
+      <!-- Tabla de comparación de las uñas -->
+      <table border="1px">
+        <caption>
+          <strong>Uñas</strong>
+        </caption>
+        <thead>
+          <tr>
+            <th rowspan="2">
+              <img
+                src="imagenes/Ilustracion11_1.png"
+                alt="logo"
+                width="100px"
+                height="100"
+              />
+            </th>
+            <th>Blue Me Biodegradable Glitter Top Coat</th>
+            <th>Breather Nail Lacquer</th>
+          </tr>
+          <tr>
+            <th>
+              <img
+                src="imagenes/descarga.jpg"
+                alt="Blue Me"
+                width="150"
+                height="150"
+              />
+            </th>
+            <th>
+              <img
+                src="imagenes/descarga (1).jpg"
+                alt="Breather Nail Lacquer"
+                width="150"
+                height="150"
+              />
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Fórmula</th>
+            <td>
+              <ul>
+                <li>
+                  Enriquecida con purpurina biodegradable plateada y azul.
+                </li>
+                <li>
+                  Puede usarse solo o como top coat para dar un toque brillante.
+                </li>
+              </ul>
+            </td>
+            <td>
+              Crea una película no oclusiva y permeable al aire sobre las uñas.
+            </td>
+          </tr>
+          <tr>
+            <th rowspan="2">Duración</th>
+            <td rowspan="2">Dura 4 días</td>
+            <td>3 días</td>
+          </tr>
+          <tr>
+            <td>7 días si se combina con base y top coat.</td>
+          </tr>
+          <tr>
+            <th>Efecto</th>
+            <td>Brillo extraordinario gracias a la purpurina biodegradable.</td>
+            <td>Sofisticado efecto brillo con tonos altamente pigmentados.</td>
+          </tr>
+          <tr>
+            <th>Color</th>
+            <td>
+              <input
+                type="color"
+                value="#657F82"
+                disabled
+              />
+            </td>
+            <td>
+              <input
+                type="color"
+                value="#F5D8D9"
+                disabled
+              />
+              <input
+                type="color"
+                value="#FECEA3"
+                disabled
+              />
+              <input
+                type="color"
+                value="#D02E32"
+                disabled
+              />
+            </td>
+          </tr>
+          <tr>
+            <th>Combinaciones</th>
+            <td>
+              Puede combinarse con esmaltes de diferentes tonos para
+              personalizar el acabado.
+            </td>
+            <td>
+              Cada tono está optimizado para máxima pigmentación, cobertura e
+              intensidad.
+            </td>
+          </tr>
+          <tr>
+            <th>Testado</th>
+            <td colspan="2">Dermatológicamente testado.</td>
+          </tr>
+          <tr>
+            <th>Público objetivo</th>
+            <td>
+              Ideal para quienes buscan opciones sostenibles, veganas y con un
+              enfoque en la protección ambiental.
+            </td>
+            <td>
+              Enfocado en quienes prefieren esmaltes de larga duración con alta
+              pigmentación y un acabado elegante.
+            </td>
+          </tr>
+          <tr>
+            <th>Vegan Cruelty-Free</th>
+            <td>&#9989;</td>
+            <td>&#9989;</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th>Precio</th>
+            <th>2,00 &#8364;</th>
+            <th>5,59 &#8364;</th>
+          </tr>
+        </tfoot>
+      </table>
+      <hr />
+    </main>
+    <!-- Pie de la página donde aparecen las redes sociales -->
+    <footer>
+      <h2>Nuestras redes sociales</h2>
+      <nav>
+        <a href="#inicio">
+          <img
+            src="imagenes/logo.png"
+            alt="Logo DivasMakeUp"
+            width="100"
+            height="100"
+            title="Logo DivasMakeUp"
+          />
+        </a>
+        <a
+          href="https://www.instagram.com/"
+          target="_blank"
+        >
+          <img
+            src="imagenes/logo insta.png"
+            alt="Logo de Instagram"
+            width="100"
+            height="100"
+            title="Logo Insta"
+          />
+        </a>
+        <a
+          href="https://www.tiktok.com/"
+          target="_blank"
+        >
+          <img
+            src="imagenes/logo tiktok.png"
+            alt="Logo de Tiktok"
+            width="100"
+            height="100"
+            title="Logo Tiktok"
+          />
+        </a>
+        <a
+          href="https://www.youtube.com/"
+          target="_blank"
+        >
+          <img
+            src="imagenes/logo youtube.jpg"
+            alt="Logo de YouTube"
+            width="100"
+            height="100"
+            title="Logo Youtube"
+          />
+        </a>
+      </nav>
+      <p><q><em>La belleza comienza en el momento en el que decides ser tú misma.</em></q> </p>
+    </footer>
+  </body>
+</html>

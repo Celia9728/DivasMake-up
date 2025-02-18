@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <meta
+      name="author"
+      content="Celia"
+    />
+    <meta
+      name="description"
+      content="Página de presupuesto sobre nuestros productos."
+    />
+    <meta
+      name="keywords"
+      content="cantidad, tamanio, color"
+    />
+    <title>Presupuesto</title>
+    <link
+      rel="icon"
+      href="imagenes/logo.png"
+    />
+
+    <style>
+      nav{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Cabecera de la página donde aparece el logo y la navegacion -->
+    <header>
+      <nav>
+        <a href="index.html"
+          ><img
+            src="imagenes/logo.png"
+            alt="Logo DivasMakeUp"
+            width="100"
+            height="100"
+            title="Logo DivasMakeUp"
+            id="inicio"
+        /></a>
+        <a href="presentacion.html">Presentación</a>
+        <a href="pagina1.html">¿Dónde estamos?</a>
+        <a href="pagina2.html">¿Quiénes somos?</a>
+        <a href="pagina3.html">Tienda</a>
+        <a href="pagina4.html">Comparador</a>
+        <a href="pagina5.html">Presupuesto</a>
+        <a href="pagina6.html">Contacto</a>
+        <a href="pagina7.html">Preguntas Frecuentes</a>
+      </nav>
+      <hr />
+    </header>
+    <!-- Cuerpo de la página donde aparece el contenido -->
+    <main>
+      <!-- Formulario de presupuesto sobre los diferentes productos de la tienda -->
+      <h1>Presupuesto</h1>
+      <form
+        action="procesamiento_formulario.php"
+        method="get"
+      >
+        <!-- Parte donde se piden los datos del usuario -->
+        <fieldset>
+          <legend><h3>Contacto</h3></legend>
+          <p>
+            <progress
+              value="25"
+              max="100"
+            ></progress>
+            <em
+              >¡Empieza completando tus datos para que podamos conectarnos
+              contigo!</em
+            >
+          </p>
+          <br />
+          <p>
+            <strong> Nombre: </strong>
+            <input
+              type="text"
+              name="nombre"
+              placeholder="Nombre"
+              required
+            />
+          </p>
+          <p>
+            <strong> Teléfono: </strong>
+            <input type="text" name="telefono" size="25" pattern="[0-9]{9}" r
+            required
+          </p>
+          <p>
+            <strong> Email: </strong>
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              required
+            />
+          </p>
+        </fieldset>
+
+        <br />
+        <!-- Parte donde se eligen los diferentes productos y el rango de precio deseado a gastar -->
+        <fieldset>
+          <legend>
+            <h3>Productos</h3>
+          </legend>
+          <p>
+            <progress
+              value="40"
+              max="100"
+            ></progress>
+            <em>Elige tu en que y cuanto quieres gastarte</em>
+          </p>
+          <p>
+            <strong> Rango precio: </strong>
+            15 &#8364;
+            <input
+              type="range"
+              list="rangos"
+              value="20"
+              min="5"
+              max="50"
+              step="5"
+            />
+            100 &#8364;
+          </p>
+          <p>
+            <strong>Ojos: </strong>
+            <input
+              type="checkbox"
+              name="ojos"
+              value="Hypnôse Drama"
+            />
+            Hypnôse Drama
+            <input
+              type="checkbox"
+              name="ojos"
+              value="Lash Idole"
+            />
+            Lash Idole
+          </p>
+          <p>
+            <strong>Labios: </strong>
+            <input
+              type="checkbox"
+              name="labios"
+              value="Gloss Bomb Stix"
+            />
+            Gloss Bomb Stix
+            <input
+              type="checkbox"
+              name="labios"
+              value="Gloss Bomb Cream"
+            />
+            Gloss Bomb Cream
+          </p>
+          <p>
+            <strong>Mascarillas:</strong>
+            <input
+              type="checkbox"
+              name="cara"
+              value="cara_mascarilla_rosa"
+            />
+            Mascarilla Facial Hydra Bomb Calmante
+            <input
+              type="checkbox"
+              name="cara"
+              id="cara_mascarilla_verde"
+            />
+            Mascarilla Facial Hydra Bomb Calmante
+          </p>
+          <p>
+            <strong>Uñas:</strong>
+            <input
+              type="checkbox"
+              name="unias"
+              value="blue me top coat"
+            />
+            Blue Me Glitter Top Coat
+            <input
+              type="checkbox"
+              name="unias"
+              id="breather nail lacquer"
+            />
+            Breather Nail Lacquer
+          </p>
+        </fieldset>
+
+        <br />
+        <!-- Parte donde se personalizan los productos del pedido -->
+        <fieldset>
+          <legend>
+            <h3>Personalizar</h3>
+          </legend>
+          <p>
+            <progress
+              value="70"
+              max="100"
+            ></progress>
+            <em>Customiza tus productos en función a tus necesidades.</em>
+          </p>
+          <!-- Parte donde se personalizan los productos de los ojos -->
+          <fieldset>
+            <legend><h3>Ojos</h3></legend>
+            <h4>Hypnôse Drama</h4>
+            <p>
+              <strong> Cantidad: </strong>
+              <input
+                type="number"
+                min="0"
+              />
+            </p>
+            <p>
+              <strong> Tamaño: </strong>
+              <input
+                type="radio"
+                name="tamañoOjos1"
+                value="viaje"
+              />
+              Viaje
+              <input
+                type="radio"
+                name="tamañoOjos1"
+                value="original"
+              />
+              Original
+            </p>
+            <hr />
+            <h4>Lash Idole</h4>
+            <p>
+              <strong> Cantidad: </strong>
+              <input
+                type="number"
+                min="0"
+              />
+            </p>
+            <p>
+              <strong> Tamaño: </strong>
+              <input
+                type="radio"
+                name="tamañoOjos2"
+                value="viaje"
+              />
+              Viaje
+              <input
+                type="radio"
+                name="tamañoOjos2"
+                value="original"
+              />
+              Original
+            </p>
+            <p>
+              <strong> Color: </strong>
+              <input
+                type="radio"
+                name="colorOjos2"
+                value="#000000"
+              />
+              <input
+                type="color"
+                name="colorOjos2"
+                value="#000000"
+                disabled
+              />
+              <input
+                type="radio"
+                name="colorOjos2"
+                value="#5E3D31"
+              />
+              <input
+                type="color"
+                name="colorOjos2"
+                value="#5E3D31"
+                disabled
+              />
+            </p>
+          </fieldset>
+          <br />
+          <!-- Parte donde se personalizan los productos de los labios -->
+          <fieldset>
+            <legend>
+              <h3>Labios</h3>
+            </legend>
+            <h4>Gloss Bomb Stix</h4>
+            <p>
+              <strong> Cantidad: </strong>
+              <input
+                type="number"
+                min="0"
+              />
+            </p>
+            <p>
+              <strong> Tamaño: </strong>
+              <input
+                type="radio"
+                name="tamañoLabios1"
+                value="viaje"
+              />
+              Viaje
+              <input
+                type="radio"
+                name="tamañoLabios1"
+                value="original"
+              />
+              Original
+            </p>
+            <p>
+              <strong> Color: </strong>
+              <input
+                type="radio"
+                name="colorLabios1"
+                value="#C9767C"
+              />
+              <input
+                type="color"
+                name="colorLabios1"
+                value="#C9767C"
+                disabled
+              />
+              <input
+                type="radio"
+                name="colorLabios1"
+                value="#7A3C4A"
+              />
+              <input
+                type="color"
+                name="colorLabios1"
+                value="#7A3C4A"
+                disabled
+              />
+              <input
+                type="radio"
+                name="colorLabios1"
+                value="#BC0118"
+              />
+              <input
+                type="color"
+                name="colorLabios1"
+                value="#BC0118"
+                disabled
+              />
+            </p>
+            <hr />
+            <h4>Gloss Bomb Cream</h4>
+            <p>
+              <strong> Cantidad: </strong>
+              <input
+                type="number"
+                min="0"
+              />
+            </p>
+            <p>
+              <strong> Tamaño: </strong>
+              <input
+                type="radio"
+                name="tamañoLabios2"
+                value="viaje"
+              />
+              Viaje
+              <input
+                type="radio"
+                name="tamañoLabios2"
+                value="original"
+              />
+              Original
+            </p>
+            <p>
+              <strong> Color: </strong>
+              <input
+                type="radio"
+                name="colorLabios2"
+                value="#623425"
+              />
+              <input
+                type="color"
+                name="colorLabios2"
+                value="#623425"
+                disabled
+              />
+              <input
+                type="radio"
+                name="colorLabios2"
+                value="#B68792"
+              />
+              <input
+                type="color"
+                name="colorLabios2"
+                value="#B68792"
+                disabled
+              />
+              <input
+                type="radio"
+                name="colorLabios2"
+                value="#742524"
+              />
+              <input
+                type="color"
+                name="colorLabios2"
+                value="#742524"
+                disabled
+              />
+            </p>
+          </fieldset>
+          <br />
+          <!-- Parte donde se personalizan los productos de las uñas -->
+          <fieldset>
+            <legend>
+              <h3>Uñas</h3>
+            </legend>
+            <h4>Blue Me Glitter Top Coat</h4>
+            <p>
+              <strong> Cantidad: </strong>
+              <input
+                type="number"
+                min="0"
+              />
+            </p>
+            <p>
+              <strong> Tamaño: </strong>
+              <input
+                type="radio"
+                name="tamañoUnias1"
+                value="viaje"
+              />
+              Viaje
+              <input
+                type="radio"
+                name="tamañoUnias1"
+                value="original"
+              />
+              Original
+            </p>
+            <hr />
+            <h4>Breather Nail Lacquer</h4>
+            <p>
+              <strong> Cantidad: </strong>
+              <input
+                type="number"
+                min="0"
+              />
+            </p>
+            <p>
+              <strong> Tamaño: </strong>
+              <input
+                type="radio"
+                name="tamañoUnias2"
+                value="viaje"
+              />
+              Viaje
+              <input
+                type="radio"
+                name="tamañoUnias2"
+                value="original"
+              />
+              Original
+            </p>
+            <p>
+              <strong> Efecto: </strong>
+              <select name="efecto">
+                <option value="mate">Mate</option>
+                <option value="brillo">Brillo</option>
+              </select>
+            </p>
+            <p>
+              <strong> Color: </strong>
+              <input
+                type="radio"
+                name="colorUnias2"
+                value="#F5D8D9"
+              />
+              <input
+                type="color"
+                name="colorUnias2"
+                value="#F5D8D9"
+                disabled
+              />
+              <input
+                type="radio"
+                name="colorUnias2"
+                value="#FECEA3"
+              />
+              <input
+                type="color"
+                name="colorUnias2"
+                value="#FECEA3"
+                disabled
+              />
+              <input
+                type="radio"
+                name="colorUnias2"
+                value="#D02E32"
+              />
+              <input
+                type="color"
+                name="colorUnias2"
+                value="#D02E32"
+                disabled
+              />
+            </p>
+          </fieldset>
+        </fieldset>
+        <fieldset>
+          <legend><h3>Terminar presupuesto</h3></legend>
+          <p>
+            <progress
+              value="80"
+              max="100"
+            ></progress>
+            <em> ¡Por último, ultimemos detalles! </em>
+          </p>
+          <p>
+            <strong>Fecha:</strong>
+            <input
+              type="date"
+              name="fecha_reparto"
+            />
+          </p>
+          <p>
+            <i><sup>Fecha en la que poder comunicarnos con usted.</sup></i>
+          </p>
+          <p>
+            <strong>Lugar:</strong>
+            <select name="lugar_reparto">
+              <option value="Télefono">Télefono</option>
+              <option value="Tienda">Tienda</option>
+              <option value="Correo">Correo</option>
+            </select>
+          </p>
+          <p>
+            <strong>Cupón descuento:</strong>
+            <input
+              type="text"
+              name="cuponDescuento"
+              placeholder="Introduce tu cupón"
+            />
+          </p>
+          <p>
+            <strong>Especificaciones:</strong>
+            <textarea
+              name="especificaciones"
+              rows="4"
+              cols="50"
+              placeholder="¡Comunícanos cualquier especificación que necesitemos saber para que tu presupuesto sea perfecto!"
+            ></textarea>
+          </p>
+        </fieldset>
+        <br />
+        <input
+          type="reset"
+          name="borrar"
+          value="Borrar"
+        />
+        <input type="submit" />
+        <p>
+          <progress
+            value="100"
+            max="100"
+          ></progress>
+          <em> ¡Gracias! Pronto podrás disfrutar de tu presupuesto. </em>
+        </p>
+      </form>
+      <hr />
+    </main>
+    <!-- Pie de la página donde aparecen las redes sociales -->
+    <footer>
+      <h2>Nuestras redes sociales</h2>
+      <nav>
+        <a href="#inicio">
+          <img
+            src="imagenes/logo.png"
+            alt="Logo DivasMakeUp"
+            width="100"
+            height="100"
+            title="Logo DivasMakeUp"
+          />
+        </a>
+        <a
+          href="https://www.instagram.com/"
+          target="_blank"
+        >
+          <img
+            src="imagenes/logo insta.png"
+            alt="Logo de Instagram"
+            width="100"
+            height="100"
+            title="Logo Insta"
+          />
+        </a>
+        <a
+          href="https://www.tiktok.com/"
+          target="_blank"
+        >
+          <img
+            src="imagenes/logo tiktok.png"
+            alt="Logo de Tiktok"
+            width="100"
+            height="100"
+            title="Logo Tiktok"
+          />
+        </a>
+        <a
+          href="https://www.youtube.com/"
+          target="_blank"
+        >
+          <img
+            src="imagenes/logo youtube.jpg"
+            alt="Logo de YouTube"
+            width="100"
+            height="100"
+            title="Logo Youtube"
+          />
+        </a>
+      </nav>
+      <p><q><em>La belleza comienza en el momento en el que decides ser tú misma.</em></q> </p>
+    </footer>
+  </body>
+</html>
