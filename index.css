@@ -1,0 +1,40 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  outline: tomato 1px solid;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+main {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-rows: 1fr 2fr 2fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    'titulo titulo titulo'
+    'info info ofertas'
+    'promos promos ofertas';
+}
+
+h3 {
+  grid-area: titulo;
+}
+
+#informacion {
+  grid-area: info;
+}
+
+#promociones {
+  grid-area: promos;
+}
+
+aside {
+  grid-area: ofertas;
+}
