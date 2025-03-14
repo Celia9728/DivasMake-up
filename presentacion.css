@@ -8,7 +8,7 @@
 }
 
 body {
-  background-color: rgb(var(--color-rosa));
+  background-color: rgb(var(--color-rosa) / 0.5);
 }
 
 nav {
