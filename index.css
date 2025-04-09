@@ -2,7 +2,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  outline: tomato 1px solid;
+  /* outline: tomato 1px solid; */
 }
 
 nav {
@@ -23,10 +23,6 @@ main {
     'promos promos ofertas';
 }
 
-h3 {
-  grid-area: titulo;
-}
-
 #informacion {
   grid-area: info;
 }
@@ -43,4 +39,30 @@ iframe {
   border: none;
   height: 300px;
   width: auto;
+}
+
+/* Estilos de las fotos */
+.cards {
+  grid-area: titulo;
+
+  > img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    opacity: 0.6;
+    filter: none; /* Para eliminar los filtros */
+    transition: opacity, filter, scale 0.15s ease-in;
+
+    &:hover {
+      opacity: 1;
+      scale: 1.02;
+      transition: opacity, scale 0.2s ease-in;
+    }
+  }
+
+  &:has(img:hover) > img:not(:hover) {
+    filter: grayscale(1);
+    scale: 0.98;
+    transition: filter, scale 0.2s ease-in;
+  }
 }
