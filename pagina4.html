@@ -7,6 +7,10 @@
       content="width=device-width, initial-scale=1.0"
     />
     <title>Comparador</title>
+    <link
+      rel="stylesheet"
+      href="pagina4.css"
+    />
     <meta
       name="author"
       content="Celia"
@@ -23,19 +27,22 @@
       rel="icon"
       href="imagenes/logo.png"
     />
-    <style>
-      nav {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-      }
-    </style>
+    <link
+      rel="stylesheet"
+      href="estilosGlobales.css"
+    />
+    <link
+      rel="stylesheet"
+      href="pagina4.css"
+    />
   </head>
   <body>
     <!-- Cabecera de la página donde aparece el logo y la navegacion -->
     <header>
-      <nav>
-        <a href="index.html"
+      <nav class="navegacion1">
+        <a
+          href="index.html"
+          class="logo"
           ><img
             src="imagenes/logo.png"
             alt="Logo DivasMakeUp"
@@ -45,219 +52,255 @@
             id="inicio"
         /></a>
         <a href="presentacion.html">Presentación</a>
-        <a href="pagina1.html">¿Dónde estamos?</a>
-        <a href="pagina2.html">¿Quiénes somos?</a>
-        <a href="pagina3.html">Tienda</a>
+
+        <a href="pagina2.html"> ¿Quiénes somos?</a>
+        <a href="pagina3.html"> Tienda</a>
         <a href="pagina4.html">Comparador</a>
         <a href="pagina5.html">Presupuesto</a>
-        <a href="pagina6.html">Contacto</a>
-        <a href="pagina7.html">Preguntas Frecuentes</a>
       </nav>
-      <hr />
+      <nav class="navegacion2">
+        <a href="pagina1.html">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-shop"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.37 2.37 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0M1.5 8.5A.5.5 0 0 1 2 9v6h1v-5a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v5h6V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5M4 15h3v-5H4zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1zm3 0h-2v3h2z"
+            /></svg
+        ></a>
+        <a href="pagina6.html">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-envelope"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"
+            /></svg
+        ></a>
+        <a href="pagina7.html">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-question-lg"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M4.475 5.458c-.284 0-.514-.237-.47-.517C4.28 3.24 5.576 2 7.825 2c2.25 0 3.767 1.36 3.767 3.215 0 1.344-.665 2.288-1.79 2.973-1.1.659-1.414 1.118-1.414 2.01v.03a.5.5 0 0 1-.5.5h-.77a.5.5 0 0 1-.5-.495l-.003-.2c-.043-1.221.477-2.001 1.645-2.712 1.03-.632 1.397-1.135 1.397-2.028 0-.979-.758-1.698-1.926-1.698-1.009 0-1.71.529-1.938 1.402-.066.254-.278.461-.54.461h-.777ZM7.496 14c.622 0 1.095-.474 1.095-1.09 0-.618-.473-1.092-1.095-1.092-.606 0-1.087.474-1.087 1.091S6.89 14 7.496 14"
+            /></svg
+        ></a>
+      </nav>
     </header>
     <!-- Cuerpo de la página donde aparece el contenido -->
     <main>
       <!-- Tablas de comparación de productos -->
-      <h1>Comparativa de productos</h1>
       <section>
         <article>
           <!-- Tabla de comparación de los ojos -->
-          <table border="1px">
-            <caption>
-              <strong>Ojos</strong>
-            </caption>
+          <table>
             <thead>
-              <tr>
-                <th rowspan="2">
-                  <img
-                    src="imagenes/Ilustracion11_1.png"
-                    alt="logo"
-                    width="100px"
-                    height="100"
-                  />
-                </th>
-                <th>Hypnôse Drama</th>
-                <th>Lash Idole</th>
-              </tr>
               <tr>
                 <th>
                   <img
                     src="imagenes/ojos_hypnose_drama.png"
                     alt="Hypnôse Drama"
-                    width="50"
-                    height="100"
+                    height="200"
                   />
                 </th>
+                <th></th>
                 <th>
                   <img
                     src="imagenes/ojos_lash_idole.png"
                     alt="Lash Idole"
-                    width="80"
-                    height="100"
+                    height="200"
                   />
                 </th>
+              </tr>
+              <tr>
+                <th>Hypnôse Drama</th>
+                <th></th>
+                <th>Lash Idole</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <th>Volumen</th>
                 <td>17 veces más volumen</td>
+                <th>Volumen</th>
                 <td>
                   Volumen revelador, todas las pestañas quedan definidas,
                   extendidas y alargadas
                 </td>
               </tr>
               <tr>
-                <th>Duración</th>
                 <td>24 horas</td>
+                <th>Duración</th>
                 <td>12 horas</td>
               </tr>
               <tr>
+                <td>
+                  <span class="color negro"></span>
+                </td>
                 <th>Color</th>
                 <td>
-                  <input
-                    type="color"
-                    value="#000000"
-                    disabled
-                  />
-                </td>
-                <td>
-                  <input
-                    type="color"
-                    value="#5E3D31"
-                    disabled
-                  />
-                  <input
-                    type="color"
-                    value="#000000"
-                    disabled
-                  />
+                  <span class="color marron"></span>
+                  <span class="color negro"></span>
                 </td>
               </tr>
               <tr>
-                <th>Fortalecimiento</th>
                 <td>Pestañas fortalecidas gracias al 2% de bonding complex</td>
-                <td>&#10060;</td>
+                <th>Fortalecimiento</th>
+                <td class="centrar-svg">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    class="x"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"
+                    />
+                  </svg>
+                </td>
               </tr>
               <tr>
+                <td class="centrar-svg">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    class="check"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"
+                    />
+                  </svg>
+                </td>
                 <th>Apto ojos sensibles</th>
-                <td>&#9989;</td>
-                <td>&#10060;</td>
+                <td class="centrar-svg">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    class="x"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"
+                    />
+                  </svg>
+                </td>
               </tr>
               <tr>
+                <td class="centrar-svg">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    class="x"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"
+                    />
+                  </svg>
+                </td>
                 <th>Vegan Cruelty-Free</th>
-                <td>&#10060;</td>
-                <td>&#9989;</td>
+                <td class="vegan">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                    class="vegan"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M512 32c0 113.6-84.6 207.5-194.2 222c-7.1-53.4-30.6-101.6-65.3-139.3C290.8 46.3 364 0 448 0l32 0c17.7 0 32 14.3 32 32zM0 96C0 78.3 14.3 64 32 64l32 0c123.7 0 224 100.3 224 224l0 32 0 160c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-160C100.3 320 0 219.7 0 96z"
+                    />
+                  </svg>
+                </td>
               </tr>
             </tbody>
             <tfoot>
               <tr>
-                <th>Precio</th>
                 <th>28,00 &#8364;</th>
+                <th>Precio</th>
                 <th>26,60 &#8364;</th>
               </tr>
             </tfoot>
           </table>
-          <br />
-          <hr />
-          <br />
         </article>
+        <br />
         <article>
           <!-- Tabla de comparación de los labios -->
-          <table border="1px">
-            <caption>
-              <strong>Labios</strong>
-            </caption>
+          <table>
             <thead>
-              <tr>
-                <th rowspan="2">
-                  <img
-                    src="imagenes/Ilustracion11_1.png"
-                    alt="logo"
-                    width="100px"
-                    height="100"
-                  />
-                </th>
-                <th>Gloss Bomb Stix - Gloss en stick brillo intenso</th>
-                <th>
-                  Gloss Bomb Cream - Brillo de labios lacado de color mate
-                </th>
-              </tr>
               <tr>
                 <th>
                   <img
                     src="imagenes/labios_fenty.png"
                     alt="Gloss Bomb Stix"
-                    width="50"
-                    height="100"
+                    height="200"
                   />
                 </th>
+                <td></td>
                 <th>
                   <img
                     src="imagenes/P10051031_principal.avif"
                     alt="Gloss Bomb Cream"
-                    width="100"
-                    height="100"
+                    height="200"
                   />
+                </th>
+              </tr>
+              <tr>
+                <th>Gloss Bomb Stix - Gloss en stick brillo intenso</th>
+                <th></th>
+                <th>
+                  Gloss Bomb Cream - Brillo de labios lacado de color mate
                 </th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <th rowspan="2">Brillo</th>
-                <td rowspan="2">Intenso</td>
-                <td>Mate</td>
+                <td>Intenso</td>
+                <th>Brillo</th>
+                <td>
+                  <ul>
+                    <li>Mate</li>
+                    <li>Intenso combinándolo con Gloss Bomb2</li>
+                  </ul>
+                </td>
               </tr>
               <tr>
-                <td>Intenso combinándolo con Gloss Bomb2</td>
+                <td>8 horas</td>
+                <th>Duración</th>
+                <td>
+                  <ul>
+                    <li>4 horas.</li>
+                    <li>12 horas combinándolo con Gloss Bomb2</li>
+                  </ul>
+                </td>
               </tr>
               <tr>
-                <th rowspan="2">Duración</th>
-                <td rowspan="2">8 horas</td>
-                <td>4 horas.</td>
-              </tr>
-              <tr>
-                <td>12 horas combinándolo con Gloss Bomb2</td>
-              </tr>
-              <tr>
+                <td>
+                  <span class="color rosa"></span>
+                  <span class="color morado"></span>
+                  <span class="color rojo"></span>
+                </td>
                 <th>Color</th>
                 <td>
-                  <input
-                    type="color"
-                    value="#C9767C"
-                    disabled
-                  />
-                  <input
-                    type="color"
-                    value="#7A3C4A"
-                    disabled
-                  />
-                  <input
-                    type="color"
-                    value="#BC0118"
-                    disabled
-                  />
-                </td>
-                <td>
-                  <input
-                    type="color"
-                    value="#623425"
-                    disabled
-                  />
-                  <input
-                    type="color"
-                    value="#B68792"
-                    disabled
-                  />
-                  <input
-                    type="color"
-                    value="#742524"
-                    disabled
-                  />
+                  <span class="color marron"></span>
+                  <span class="color moradoClaro"></span>
+                  <span class="color marronOscuro"></span>
                 </td>
               </tr>
               <tr>
-                <th>Vitaminas</th>
                 <td>
                   <ul>
                     <li>Enriquecido con escualano</li>
@@ -266,6 +309,7 @@
                     <li>Aceite de semilla de kiwi</li>
                   </ul>
                 </td>
+                <th>Vitaminas</th>
                 <td>
                   <ul>
                     <li>Contiene vitamina A</li>
@@ -274,76 +318,89 @@
                 </td>
               </tr>
               <tr>
+                <td>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    class="x"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"
+                    />
+                  </svg>
+                </td>
                 <th>Vegan Cruelty-Free</th>
-                <td>&#10060;</td>
-                <td>&#9989;</td>
+                <td>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                    class="vegan"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M512 32c0 113.6-84.6 207.5-194.2 222c-7.1-53.4-30.6-101.6-65.3-139.3C290.8 46.3 364 0 448 0l32 0c17.7 0 32 14.3 32 32zM0 96C0 78.3 14.3 64 32 64l32 0c123.7 0 224 100.3 224 224l0 32 0 160c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-160C100.3 320 0 219.7 0 96z"
+                    />
+                  </svg>
+                </td>
               </tr>
             </tbody>
             <tfoot>
               <tr>
-                <th>Precio</th>
                 <th>23,99 &#8364;</th>
+                <th>Precio</th>
                 <th>22,99 &#8364;</th>
               </tr>
             </tfoot>
           </table>
-          <br />
-          <hr />
-          <br />
         </article>
+        <br />
         <article>
           <!-- Tabla de comparación de las mascarillas -->
-          <table border="1px">
-            <caption>
-              <strong>Cara</strong>
-            </caption>
+          <table>
             <thead>
-              <tr>
-                <th rowspan="2">
-                  <img
-                    src="imagenes/Ilustracion11_1.png"
-                    alt="logo"
-                    width="100px"
-                    height="100"
-                  />
-                </th>
-                <th>
-                  Mascarilla Facial Hydra Bomb Super Hidratante Calmante con
-                  Ácido Hialurónico
-                </th>
-                <th>
-                  Mascarilla Facial Hydra Bomb Super Hidratante Matificante con
-                  Ácido Hialurónico
-                </th>
-              </tr>
               <tr>
                 <th>
                   <img
                     src="imagenes/cara_mascarilla_rosa.png"
                     alt="mascarilla rosa"
                     width="60"
-                    height="100"
+                    height="200"
+                    class="mascarilla"
                   />
                 </th>
+                <td></td>
                 <th>
                   <img
                     src="imagenes/cara_mascarilla_verde.png"
                     alt="marcarilla verde"
                     width="60"
-                    height="100"
+                    height="200"
+                    class="mascarilla"
                   />
+                </th>
+              </tr>
+              <tr>
+                <th>
+                  Mascarilla Facial Hydra Bomb Super Hidratante Calmante con
+                  Ácido Hialurónico
+                </th>
+                <th></th>
+                <th>
+                  Mascarilla Facial Hydra Bomb Super Hidratante Matificante con
+                  Ácido Hialurónico
                 </th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <th rowspan="2">Efecto piel</th>
                 <td>
                   <ul>
                     <li>Calmante</li>
                     <li>Suavizante</li>
                   </ul>
                 </td>
+                <th>Efecto piel</th>
                 <td>
                   <ul>
                     <li>Matificante</li>
@@ -353,97 +410,116 @@
                   </ul>
                 </td>
               </tr>
-
               <tr>
-                <td colspan="2">
-                  <ul>
-                    <li>Refrescante</li>
-                    <li>Hidratante</li>
-                  </ul>
+                <td>Mascarilla</td>
+                <th>Formato</th>
+                <td>Mascarilla</td>
+              </tr>
+              <tr>
+                <td>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    class="check"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"
+                    />
+                  </svg>
+                </td>
+                <th>Formulación</th>
+                <td>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    class="check"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"
+                    />
+                  </svg>
                 </td>
               </tr>
               <tr>
-                <th>Formato</th>
-                <td colspan="2">Mascarilla</td>
-              </tr>
-              <tr>
-                <th>Formulación</th>
-                <td>&#9989;</td>
-                <td>&#9989;</td>
-              </tr>
-              <tr>
-                <th rowspan="2">Ingrediente estrella</th>
                 <td>Camomila</td>
+                <th>Ingrediente estrella</th>
                 <td>Té verde</td>
               </tr>
               <tr>
-                <td colspan="2">Ácido hialurónico</td>
-              </tr>
-              <tr>
-                <th>Tipo de piel</th>
                 <td>Sensible, seca</td>
+                <th>Tipo de piel</th>
                 <td>Mixta o grasa</td>
               </tr>
-
               <tr>
+                <td>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                    class="vegan"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M512 32c0 113.6-84.6 207.5-194.2 222c-7.1-53.4-30.6-101.6-65.3-139.3C290.8 46.3 364 0 448 0l32 0c17.7 0 32 14.3 32 32zM0 96C0 78.3 14.3 64 32 64l32 0c123.7 0 224 100.3 224 224l0 32 0 160c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-160C100.3 320 0 219.7 0 96z"
+                    />
+                  </svg>
+                </td>
                 <th>Vegan Cruelty-Free</th>
-                <td>&#9989;</td>
-                <td>&#10060;</td>
+                <td>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    class="x"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"
+                    />
+                  </svg>
+                </td>
               </tr>
             </tbody>
             <tfoot>
               <tr>
-                <th>Precio</th>
                 <th>2,49 &#8364;</th>
+                <th>Precio</th>
                 <th>2,49 &#8364;</th>
               </tr>
             </tfoot>
           </table>
-          <br />
-          <hr />
-          <br />
         </article>
+        <br />
         <article>
           <!-- Tabla de comparación de las uñas -->
-          <table border="1px">
-            <caption>
-              <strong>Uñas</strong>
-            </caption>
+          <table>
             <thead>
               <tr>
-                <th rowspan="2">
+                <th>
                   <img
-                    src="imagenes/Ilustracion11_1.png"
-                    alt="logo"
-                    width="100px"
-                    height="100"
+                    src="imagenes/descarga.png"
+                    alt="Blue Me"
+                    height="200"
+                    class="unias"
                   />
                 </th>
-                <th>Blue Me Biodegradable Glitter Top Coat</th>
-                <th>Breather Nail Lacquer</th>
+                <td></td>
+                <th>
+                  <img
+                    src="imagenes/descarga(1).png"
+                    alt="Breather Nail Lacquer"
+                    height="200"
+                  />
+                </th>
               </tr>
               <tr>
-                <th>
-                  <img
-                    src="imagenes/descarga.jpg"
-                    alt="Blue Me"
-                    width="150"
-                    height="150"
-                  />
-                </th>
-                <th>
-                  <img
-                    src="imagenes/descarga (1).jpg"
-                    alt="Breather Nail Lacquer"
-                    width="150"
-                    height="150"
-                  />
-                </th>
+                <th>Blue Me Biodegradable Glitter Top Coat</th>
+                <th></th>
+                <th>Breather Nail Lacquer</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <th>Fórmula</th>
                 <td>
                   <ul>
                     <li>
@@ -455,105 +531,110 @@
                     </li>
                   </ul>
                 </td>
+                <th>Fórmula</th>
                 <td>
                   Crea una película no oclusiva y permeable al aire sobre las
                   uñas.
                 </td>
               </tr>
               <tr>
-                <th rowspan="2">Duración</th>
-                <td rowspan="2">Dura 4 días</td>
-                <td>3 días</td>
+                <td>Dura 4 días</td>
+                <th>Duración</th>
+                <td>
+                  <ul>
+                    <li>3 días</li>
+                    <li>7 días si se combina con base y top coat.</li>
+                  </ul>
+                </td>
               </tr>
               <tr>
-                <td>7 días si se combina con base y top coat.</td>
-              </tr>
-              <tr>
-                <th>Efecto</th>
                 <td>
                   Brillo extraordinario gracias a la purpurina biodegradable.
                 </td>
+                <th>Efecto</th>
                 <td>
                   Sofisticado efecto brillo con tonos altamente pigmentados.
                 </td>
               </tr>
               <tr>
+                <td>
+                  <span class="color azul"></span>
+                </td>
                 <th>Color</th>
                 <td>
-                  <input
-                    type="color"
-                    value="#657F82"
-                    disabled
-                  />
-                </td>
-                <td>
-                  <input
-                    type="color"
-                    value="#F5D8D9"
-                    disabled
-                  />
-                  <input
-                    type="color"
-                    value="#FECEA3"
-                    disabled
-                  />
-                  <input
-                    type="color"
-                    value="#D02E32"
-                    disabled
-                  />
+                  <span class="color morado"></span>
+                  <span class="color salmon"></span>
+                  <span class="color rojo"></span>
                 </td>
               </tr>
               <tr>
-                <th>Combinaciones</th>
                 <td>
                   Puede combinarse con esmaltes de diferentes tonos para
                   personalizar el acabado.
                 </td>
+                <th>Combinaciones</th>
                 <td>
                   Cada tono está optimizado para máxima pigmentación, cobertura
                   e intensidad.
                 </td>
               </tr>
               <tr>
-                <th>Testado</th>
-                <td colspan="2">Dermatológicamente testado.</td>
-              </tr>
-              <tr>
-                <th>Público objetivo</th>
                 <td>
                   Ideal para quienes buscan opciones sostenibles, veganas y con
                   un enfoque en la protección ambiental.
                 </td>
+                <th>Testado</th>
                 <td>
                   Enfocado en quienes prefieren esmaltes de larga duración con
                   alta pigmentación y un acabado elegante.
                 </td>
               </tr>
               <tr>
+                <td>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                    class="vegan"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M512 32c0 113.6-84.6 207.5-194.2 222c-7.1-53.4-30.6-101.6-65.3-139.3C290.8 46.3 364 0 448 0l32 0c17.7 0 32 14.3 32 32zM0 96C0 78.3 14.3 64 32 64l32 0c123.7 0 224 100.3 224 224l0 32 0 160c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-160C100.3 320 0 219.7 0 96z"
+                    />
+                  </svg>
+                </td>
                 <th>Vegan Cruelty-Free</th>
-                <td>&#9989;</td>
-                <td>&#9989;</td>
+                <td>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                    class="vegan"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M512 32c0 113.6-84.6 207.5-194.2 222c-7.1-53.4-30.6-101.6-65.3-139.3C290.8 46.3 364 0 448 0l32 0c17.7 0 32 14.3 32 32zM0 96C0 78.3 14.3 64 32 64l32 0c123.7 0 224 100.3 224 224l0 32 0 160c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-160C100.3 320 0 219.7 0 96z"
+                    />
+                  </svg>
+                </td>
               </tr>
             </tbody>
             <tfoot>
               <tr>
-                <th>Precio</th>
                 <th>2,00 &#8364;</th>
+                <th>Precio</th>
                 <th>5,59 &#8364;</th>
               </tr>
             </tfoot>
           </table>
         </article>
       </section>
-      <br />
-      <hr />
     </main>
     <!-- Pie de la página donde aparecen las redes sociales -->
     <footer>
-      <h2>Nuestras redes sociales</h2>
       <nav>
-        <a href="#inicio">
+        <a
+          href="#inicio"
+          class="logo"
+        >
           <img
             src="imagenes/logo.png"
             alt="Logo DivasMakeUp"
@@ -567,11 +648,11 @@
           target="_blank"
         >
           <img
-            src="imagenes/logo insta.png"
+            src="icons/instagram.svg"
             alt="Logo de Instagram"
-            width="100"
-            height="100"
             title="Logo Insta"
+            width="16"
+            height="16"
           />
         </a>
         <a
@@ -579,11 +660,11 @@
           target="_blank"
         >
           <img
-            src="imagenes/logo tiktok.png"
+            src="icons/tiktok.svg"
             alt="Logo de Tiktok"
-            width="100"
-            height="100"
             title="Logo Tiktok"
+            width="16"
+            height="16"
           />
         </a>
         <a
@@ -591,14 +672,15 @@
           target="_blank"
         >
           <img
-            src="imagenes/logo youtube.jpg"
+            src="icons/youtube.svg"
             alt="Logo de YouTube"
-            width="100"
-            height="100"
             title="Logo Youtube"
+            width="16"
+            height="16"
           />
         </a>
       </nav>
+
       <p>
         <q
           ><em
