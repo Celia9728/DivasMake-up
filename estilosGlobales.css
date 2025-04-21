@@ -42,7 +42,7 @@ body {
   );
 
   background-size: 300%;
-  animation: animarGradiente 15s ease infinite;
+  animation: animarGradiente 15s ease infinite ;
 }
 
 @keyframes animarGradiente {
@@ -80,7 +80,6 @@ main {
   width: 80%;
   flex: 8;
   padding: 1.5rem;
-  /* background-color: rgb(var(--color-salmon-claro) / 0.2); */
   background-color: aliceblue;
   /* height: 60vh; */
 }
