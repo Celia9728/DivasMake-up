@@ -1,3 +1,5 @@
+/* @import url(estilosGlobales.css); */
+
 section {
   display: flex;
   flex-direction: column;
@@ -87,7 +89,7 @@ ul {
     width: 100px;
     height: 100px;
     opacity: 1;
-    transition: width 0.4s ease, height 0.4s ease, opacity 0.4s ease;
+    transition: width height opacity 0.3s ease;
   }
 
   &.negro {

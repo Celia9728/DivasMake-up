@@ -33,11 +33,33 @@ body {
   flex-wrap: nowrap;
   align-items: center;
   gap: 1.5rem;
-  background-color: rgb(var(--color-rosa) / 0.2);
+  /* background-color: rgb(var(--color-rosa) / 0.2); */
+  background: linear-gradient(
+    135deg,
+    rgb(var(--color-morado-azul) / 0.5),
+    rgb(var(--color-rosa) / 0.5),
+    rgb(var(--color-salmon-claro))
+  );
+
+  background-size: 300%;
+  animation: animarGradiente 15s ease infinite;
+}
+
+@keyframes animarGradiente {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 header {
-  background-color: rgb(var(--color-salmon-claro) / 0.2);
+  /* background-color: rgb(var(--color-salmon-claro) / 0.2); */
+  background-color: rgba(240, 248, 255, 0.517);
   position: sticky;
   top: 0;
   width: 100%;
@@ -45,7 +67,7 @@ header {
   flex: 2;
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px); /* Aplica desenfoque */
-  z-index: 2;
+  z-index: 1;
 
   display: flex;
   flex-direction: row;
@@ -56,9 +78,10 @@ header {
 
 main {
   width: 80%;
-  flex: 6;
+  flex: 8;
   padding: 1.5rem;
-  background-color: rgb(var(--color-salmon-claro) / 0.2);
+  /* background-color: rgb(var(--color-salmon-claro) / 0.2); */
+  background-color: aliceblue;
   /* height: 60vh; */
 }
 
@@ -121,10 +144,19 @@ a {
   }
 }
 
-.logo {
+.enlaceLogo {
   border: none;
+  overflow: visible;
+
   &:hover::before {
-    transition: height 0.4s ease;
     height: 0;
+  }
+
+  > img {
+    height: 50px;
+    width: 50px;
+    scale: 1.5;
+    position: relative;
+    top: 0.5rem;
   }
 }
