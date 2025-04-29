@@ -1,0 +1,128 @@
+main {
+  padding: 2rem;
+  background-color: white;
+  box-shadow: 0 0 20px rgba(var(--color-morado-azul), 0.2);
+  border-radius: 20px;
+  margin: 2rem auto;
+  max-width: 1000px;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(var(--color-morado));
+  text-shadow: 1px 1px 3px rgba(var(--color-morado-azul), 0.2);
+}
+
+/*COMO SE VE CADA CATEGORÍA DE PRODUCTOS ANTES DE PINCHAR EN ELLA, CON GRADIENT*/
+details {
+  margin: 2rem 0;
+  border: 2px solid rgb(var(--color-morado));
+  border-radius: 10px;
+  padding: 1rem;
+  background: linear-gradient(
+    90deg,
+    rgb(var(--color-rosa) / 0.1),
+    rgb(var(--color-rosa) / 0.05)
+  );
+}
+
+/*CUANDO PASO POR ENCIMA DE LAS CATEGORIAS, CAMBIA A OTRO DEGRADADADO CON LOS MISMOS COLORES, PERO DIFERENTE OPACIDAD*/
+details:hover {
+  background: linear-gradient(
+    90deg,
+    rgb(var(--color-rosa) / 0.2),
+    rgb(var(--color-rosa) / 0.1)
+  );
+}
+
+summary {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: rgb(var(--color-morado));
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(var(--color-morado-azul), 0.1);
+}
+
+caption {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: rgb(var(--color-morado-claro));
+  margin-bottom: 1rem;
+}
+
+th,
+td {
+  border: 1px solid rgb(var(--color-morado-claro) / 0.3);
+  padding: 0.8rem;
+  text-align: justify;
+  vertical-align: top;
+  background-color: rgb(var(--color-morado-claro) / 0.3);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+th {
+  background: linear-gradient(
+    to right,
+    rgb(var(--color-morado-claro) / 0.3),
+    rgb(var(--color-rosa) / 0.2)
+  );
+  color: rgb(var(--color-morado-azul));
+}
+
+td ul {
+  padding-left: 1.2rem;
+}
+
+td p {
+  margin-top: 0.5rem;
+  color: rgb(var(--color-morado));
+}
+
+/*CUANDO PASO POR ENCIMA DE LAS CELDAS DE LA TABLA, SE CAMBIA EL COLOR Y APARECE OTRO COLOR DEGRADADO */
+tbody,
+tfoot {
+  > tr:nth-child(odd) {
+    background-color: rgb(var(--color-rosa) / 0.2);
+  }
+
+  > tr {
+    &:hover {
+      background-color: rgb(var(--color-morado) / 0.2);
+      box-shadow: 0 0 10px rgba(var(--color-morado-claro), 0.5);
+      transition: all 0.3s ease;
+    }
+  }
+}
+
+/*COMO SE VEN LAS OPCIONES DE COLORES*/
+input[type='color'] {
+  border: 2px solid rgb(var(--color-morado));
+  border-radius: 5px;
+  width: 50px;
+  height: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/*LOS COLORES SE VIENEN ADELANTE CUANDO PASO POR ENCIMA*/
+input[type='color']:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 10px 2px rgb(var(--color-morado-claro));
+}
+
+/*LA IMAGEN SE VIENE ADELANTE CUANDO PASO POR ENCIMA DE ELLA*/
+img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 15px rgba(var(--color-morado-claro), 0.4);
+}

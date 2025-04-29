@@ -1,57 +1,24 @@
-:root {
-  --color-morado-azul: 76 41 145;
-  --color-morado: 134 45 163;
-  --color-morado-claro: 193 53 158;
-  --color-rosa: 242 122 158;
-  --color-salmon: 250 122 121;
-  --color-salmon-claro: 247 169 123;
+@font-face {
+  font-family: 'miFuenteCoco';
+  src: url('Comic_Relief/ComicRelief-Regular.ttf');
 }
 
-body {
-  background-color: rgb(var(--color-rosa) / 0.5);
-}
-
-nav {
+main {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-}
-
-#frase {
-  --blur: 5px;
-  position: sticky;
-  top: 0; /* Se pegará en la parte superior */
-  /* background: rgb(255 255 255 / 0.3); */
-  -webkit-backdrop-filter: blur(
-    var(--blur)
-  ); /* Para compatibilidad con Safari */
-  backdrop-filter: blur(var(--blur)); /* Aplica desenfoque */
-
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-  align-items: center;
-}
-
-img {
-  height: 100px;
-  object-fit: contain;
+  gap: 2rem;
 }
 
 #cocoChanel {
-  color: white;
+  font-family: miFuenteCoco;
+  color: rgb(var(--color-morado-azul) / 0.5);
   font-size: 18px;
+  flex-direction: initial;
 }
 
 #video video {
   width: 100%;
   border-radius: 20px 20px 20px 20px;
-}
-
-footer {
-  background-color: rgb(var(--color-morado));
-
-  & p {
-    color: white;
-  }
 }

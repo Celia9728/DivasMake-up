@@ -1,19 +1,67 @@
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
 fieldset {
-  background-color: red;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem;
+  border-radius: 10px;
+  /* background-color: rgb(var(--color-rosa) / 0.2); */
+  border: 1px solid rgb(var(--color-rosa) / 0.5);
+
+  > legend > h3 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: rgb(var(--color-morado-azul) / 0.8);
+  }
+
+  > p {
+    font-size: 1.2rem;
+    color: rgb(var(--) / 0.8);
+  }
+}
+
+fieldset > fieldset {
+  background-color: rgb(var(--color-rosa) / 0.1);
 }
 
 input[type='color'] {
-  width: 60px;
-  height: 40px;
+  width: 40px;
+  height: 30px;
   border: none;
   padding: 0;
   background: none;
 
   &:hover {
-    scale: 1.05;
+    scale: 1.15;
   }
 }
 
 input[type='radio'] {
   cursor: pointer;
+}
+
+input,
+textarea,
+select {
+  border-radius: 5px;
+  &:focus {
+    outline: 2px solid rgb(var(--color-rosa));
+  }
+}
+
+/* NO FUNCIONA!! */
+/* Cambiar los estilos del progress */
+progress::-webkit-progress-bar {
+  background-color: #eee; /* fondo */
+}
+
+progress::-webkit-progress-value {
+  background-color: #ff69b4; /* color de la barra */
 }

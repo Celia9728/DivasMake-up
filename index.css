@@ -1,8 +1,9 @@
 main {
   display: grid;
   justify-items: center;
-  align-items: center;
-  grid-template-rows: 1fr 2fr 2fr 1fr;
+  align-items: self-start;
+
+  grid-template-rows: 240px 710px 2fr;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas:
     'fotos fotos fotos'
@@ -20,6 +21,7 @@ main {
 
 aside {
   grid-area: ofertas;
+  margin-left: 10px;
 }
 
 iframe {
@@ -52,4 +54,60 @@ iframe {
     scale: 0.98;
     transition: filter, scale 0.2s ease-in;
   }
+}
+
+.imagen:hover {
+  transform: scale(1.1);
+}
+
+#informacion {
+  background-color: rgb(var(--color-salmon));
+  padding: 10px;
+  border-radius: 10px;
+}
+#informacion article p {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#promociones {
+  display: flex;
+  flex-wrap: wrap;
+}
+#promociones p {
+  background: rgb(var(--color-salmon-claro));
+  color: white;
+  max-width: 300px;
+}
+#promociones article {
+  background: rgb(var(--color-salmon-claro));
+  border-color: rgb(var(--color-salmon-claro));
+  border-width: 10px;
+  padding: 5px;
+  border-radius: 10px;
+  border: solid;
+  color: rgb(var(--color-salmon-claro));
+  text-align: center;
+}
+
+aside {
+  background-color: rgb(var(--color-salmon-claro));
+  padding: 5px;
+  border-radius: 10px;
+  text-align: center;
+}
+.banner {
+  width: 100%; /* Ajusta al 50% del contenedor */
+  height: auto; /* Mantiene la proporción */
+}
+
+.promo {
+  align-items: center;
+  width: 120; /* Ajusta al 50% del contenedor */
+  height: auto; /* Mantiene la proporción */
+}
+
+.oferta {
+  width: 100%; /* Ajusta al 50% del contenedor */
+  height: auto; /* Mantiene la proporción */
 }

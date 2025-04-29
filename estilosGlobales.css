@@ -28,6 +28,7 @@ body {
 }
 
 body {
+  padding-top: 80px;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -38,36 +39,33 @@ body {
     135deg,
     rgb(var(--color-morado-azul) / 0.5),
     rgb(var(--color-rosa) / 0.5),
-    rgb(var(--color-salmon-claro))
+    rgb(var(--color-salmon-claro) / 0.5)
   );
 
   background-size: 300%;
-  animation: animarGradiente 15s ease infinite ;
+  animation: animarGradiente 15s ease infinite alternate;
 }
 
 @keyframes animarGradiente {
   0% {
     background-position: 0% 50%;
   }
-  50% {
-    background-position: 100% 50%;
-  }
   100% {
-    background-position: 0% 50%;
+    background-position: 50% 100%;
   }
 }
 
 header {
   /* background-color: rgb(var(--color-salmon-claro) / 0.2); */
   background-color: rgba(240, 248, 255, 0.517);
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
-  /* height: 20vh; */
   flex: 2;
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px); /* Aplica desenfoque */
-  z-index: 1;
+  z-index: 10;
 
   display: flex;
   flex-direction: row;
@@ -81,6 +79,7 @@ main {
   flex: 8;
   padding: 1.5rem;
   background-color: aliceblue;
+  border-radius: 5px;
   /* height: 60vh; */
 }
 
@@ -114,7 +113,7 @@ a {
   text-decoration: none;
   position: relative;
 
-  border: 1px solid rgb(var(--color-morado-azul));
+  border: 2.3px solid rgb(var(--color-morado-azul));
   border-radius: 25px;
   padding: 5px;
   padding-inline: 18px;
