@@ -1,0 +1,19 @@
+fieldset {
+  background-color: red;
+}
+
+input[type='color'] {
+  width: 60px;
+  height: 40px;
+  border: none;
+  padding: 0;
+  background: none;
+
+  &:hover {
+    scale: 1.05;
+  }
+}
+
+input[type='radio'] {
+  cursor: pointer;
+}
