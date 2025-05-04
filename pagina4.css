@@ -5,7 +5,7 @@ section {
   flex-direction: column;
   align-content: center;
   align-items: center;
-  gap: 1.5rem;
+  gap: 2.5rem;
 }
 
 article {
@@ -15,6 +15,7 @@ article {
   align-items: center;
   border-radius: 1%;
   height: fit-content;
+  overflow-x: auto;
   width: 600px;
   background-color: rgb(var(--color-rosa) / 0.12);
 
@@ -30,6 +31,34 @@ table {
   height: 300px;
   border-collapse: collapse;
   text-align: center;
+  table-layout: fixed;
+}
+
+@media (max-width: 768px) {
+  /* Hacer que el artículo ocupe todo el ancho disponible en pantallas pequeñas */
+  article {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  /* Hacer que la tabla ocupe el 100% de su contenedor */
+  table {
+    width: 100%;
+    height: auto;
+  }
+
+  thead img {
+    max-width: 100%;
+    /* La imagen no será más ancha que el contenedor */
+    height: auto;
+    /* Mantén la proporción de la imagen */
+  }
+
+  img {
+    &.mascarilla {
+      scale: 1;
+    }
+  }
 }
 
 thead {
@@ -94,6 +123,7 @@ ul {
 
   &.negro {
     background-color: #000000;
+
     &::before {
       background-color: #000000;
     }
@@ -101,6 +131,7 @@ ul {
 
   &.marron {
     background-color: #5e3d31;
+
     &::before {
       background-color: #5e3d31;
     }
@@ -108,6 +139,7 @@ ul {
 
   &.rosa {
     background-color: #c9767c;
+
     &::before {
       background-color: #c9767c;
     }
@@ -115,6 +147,7 @@ ul {
 
   &.morado {
     background-color: #7a3c4a;
+
     &::before {
       background-color: #7a3c4a;
     }
@@ -122,6 +155,7 @@ ul {
 
   &.rojo {
     background-color: #bc0118;
+
     &::before {
       background-color: #bc0118;
     }
@@ -129,6 +163,7 @@ ul {
 
   &.moradoClaro {
     background-color: #b68792;
+
     &::before {
       background-color: #b68792;
     }
@@ -136,6 +171,7 @@ ul {
 
   &.marronOscuro {
     background-color: #742524;
+
     &::before {
       background-color: #742524;
     }
@@ -143,6 +179,7 @@ ul {
 
   &.azul {
     background-color: #657f82;
+
     &::before {
       background-color: #657f82;
     }
@@ -150,6 +187,7 @@ ul {
 
   &.salmon {
     background-color: #fecea3;
+
     &::before {
       background-color: #fecea3;
     }
@@ -159,6 +197,7 @@ ul {
 svg {
   width: 30px;
   height: 30px;
+
   &.x {
     color: crimson;
   }

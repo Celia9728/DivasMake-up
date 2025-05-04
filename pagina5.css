@@ -12,8 +12,9 @@ fieldset {
   gap: 2rem;
   padding: 1rem;
   border-radius: 10px;
-  /* background-color: rgb(var(--color-rosa) / 0.2); */
   border: 1px solid rgb(var(--color-rosa) / 0.5);
+  box-shadow: 0px 0px 4px rgb(var(--color-morado-azul) / 0.3),
+    0px 0px 15px rgb(var(--color-rosa) / 0.3);
 
   > legend > h3 {
     text-align: center;
@@ -23,12 +24,8 @@ fieldset {
 
   > p {
     font-size: 1.2rem;
-    color: rgb(var(--) / 0.8);
+    width: fit-content;
   }
-}
-
-fieldset > fieldset {
-  background-color: rgb(var(--color-rosa) / 0.1);
 }
 
 input[type='color'] {
@@ -43,7 +40,23 @@ input[type='color'] {
   }
 }
 
-input[type='radio'] {
+.obligatorio {
+  position: relative;
+  padding-inline: 1rem;
+
+  &::after {
+    content: '*';
+    position: absolute;
+    right: -5px;
+    color: rgb(255, 0, 0);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+  }
+}
+
+input[type='radio'],
+.boton {
   cursor: pointer;
 }
 
@@ -53,15 +66,86 @@ select {
   border-radius: 5px;
   &:focus {
     outline: 2px solid rgb(var(--color-rosa));
+    background-color: rgba(169, 169, 169, 0.3);
   }
 }
 
-/* NO FUNCIONA!! */
-/* Cambiar los estilos del progress */
-progress::-webkit-progress-bar {
-  background-color: #eee; /* fondo */
+#ojos,
+#labios,
+#unias {
+  position: relative;
+  overflow: hidden;
+  z-index: 5;
+  border: 0px;
 }
 
-progress::-webkit-progress-value {
-  background-color: #ff69b4; /* color de la barra */
+#ojos::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(imagenes/banner_ojos_2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(60%);
+  z-index: -1;
+  opacity: 0.3;
+}
+
+#labios::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  background-image: url(imagenes/pintalabios_banner.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(50%);
+  z-index: -1;
+  opacity: 0.3;
+}
+
+#unias::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  background-image: url(imagenes/unas_banner.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(80%);
+  filter: blur(4px);
+  z-index: -1;
+  opacity: 0.5;
+}
+
+.boton {
+  position: relative;
+  border: 2.3px solid rgb(var(--color-morado-azul));
+  border-radius: 25px;
+  padding: 5px;
+  padding-inline: 18px;
+  overflow: hidden;
+  margin: 5px;
+
+  background: linear-gradient(
+    150deg,
+    rgb(var(--color-morado-azul) / 0.5) 20%,
+    rgb(var(--color-rosa) / 0.5),
+    rgb(var(--color-salmon-claro) / 0.5)
+  );
+
+  box-shadow: 0px 0px 4px rgb(var(--color-morado-azul) / 0.5),
+    0px 0px 15px rgb(var(--color-rosa) / 0.5);
 }

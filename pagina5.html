@@ -138,7 +138,7 @@
               contigo!</em
             >
           </p>
-          <p>
+          <p class="obligatorio">
             <strong> Nombre </strong>
             <input
               type="text"
@@ -147,12 +147,12 @@
               required
             />
           </p>
-          <p>
+          <p class="obligatorio">
             <strong> Teléfono </strong>
             <input type="text" name="telefono" size="25" pattern="[0-9]{9}" r
             required
           </p>
-          <p>
+          <p class="obligatorio">
             <strong> Email </strong>
             <input
               type="email"
@@ -173,7 +173,7 @@
               value="40"
               max="100"
             ></progress>
-            <em>Elige tu en que y cuanto quieres gastarte</em>
+            <em>Elige tu en qué y cuanto quieres gastarte</em>
           </p>
           <p>
             <strong> Rango precio </strong>
@@ -263,7 +263,7 @@
             <em>Customiza tus productos en función a tus necesidades.</em>
           </p>
           <!-- Parte donde se personalizan los productos de los ojos -->
-          <fieldset>
+          <fieldset id="ojos">
             <legend><h3>Ojos</h3></legend>
             <h4>Hypnôse Drama</h4>
             <p>
@@ -338,9 +338,8 @@
               />
             </p>
           </fieldset>
-          <br />
           <!-- Parte donde se personalizan los productos de los labios -->
-          <fieldset>
+          <fieldset id="labios">
             <legend>
               <h3>Labios</h3>
             </legend>
@@ -464,9 +463,8 @@
               />
             </p>
           </fieldset>
-          <br />
           <!-- Parte donde se personalizan los productos de las uñas -->
-          <fieldset>
+          <fieldset id="unias">
             <legend>
               <h3>Uñas</h3>
             </legend>
@@ -607,12 +605,19 @@
             ></textarea>
           </p>
         </fieldset>
-        <input
-          type="reset"
-          name="borrar"
-          value="Borrar"
-        />
-        <input type="submit" />
+        <div class="botones">
+          <input
+            type="reset"
+            name="borrar"
+            value="Borrar"
+            class="boton"
+          />
+          <input
+            type="submit"
+            class="boton"
+          />
+        </div>
+
         <p>
           <progress
             value="100"
@@ -625,16 +630,6 @@
     <!-- Pie de la página donde aparecen las redes sociales -->
     <footer>
       <nav>
-        <a
-          href="#inicio"
-          class="enlaceLogo"
-        >
-          <img
-            src="imagenes/logo.png"
-            alt="Logo DivasMakeUp"
-            title="Logo DivasMakeUp"
-          />
-        </a>
         <a
           href="https://www.instagram.com/"
           target="_blank"
@@ -688,7 +683,12 @@
         </a>
       </nav>
 
+      <p>&copy; 2025 Divas-Makeup. Todos los derechos reservados.</p>
       <p>
+        Divas-Makeup es una marca dedicada a la belleza profesional, el
+        maquillaje artístico y la asesoría de imagen personalizada.
+      </p>
+      <p class="cita">
         <q
           ><em
             >La belleza comienza en el momento en el que decides ser tú

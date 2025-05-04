@@ -1,21 +1,9 @@
-@font-face {
-  font-family: 'miFuenteCoco';
-  src: url('Comic_Relief/ComicRelief-Regular.ttf');
-}
-
 main {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 2rem;
-}
-
-#cocoChanel {
-  font-family: miFuenteCoco;
-  color: rgb(var(--color-morado-azul) / 0.5);
-  font-size: 18px;
-  flex-direction: initial;
 }
 
 #video video {

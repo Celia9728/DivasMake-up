@@ -1,26 +1,19 @@
-h3 {
-  text-align: center;
-}
-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-summary {
-  list-style: none;
-  background-color: rgb(var(--color-rosa));
-  color: white;
-  font-weight: bold;
-  padding: 5px;
-  cursor: pointer;
-  border-radius: 3px;
-}
-
 details {
-  background-color: white;
-  color: rgb(var(--color-salmon));
-  padding: 10px;
-  border-radius: 5px;
+  margin: 2rem 0;
+  border: 2px solid rgb(var(--color-morado));
+  border-radius: 10px;
+  padding: 1rem;
+  background: linear-gradient(
+    90deg,
+    rgb(var(--color-rosa) / 0.1),
+    rgb(var(--color-rosa) / 0.05)
+  );
+}
+
+details:hover {
+  background: linear-gradient(
+    90deg,
+    rgb(var(--color-rosa) / 0.2),
+    rgb(var(--color-rosa) / 0.1)
+  );
 }

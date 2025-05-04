@@ -6,8 +6,18 @@
   --color-salmon: 250 122 121;
   --color-salmon-claro: 247 169 123;
 
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'estandar', sans-serif;
+}
+
+@font-face {
+  font-family: 'miFuenteCoco';
+  src: url('Comic_Relief/ComicRelief-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'estandar';
+  src: url(fuentes/fuenteComun/Quicksand-VariableFont_wght.ttf)
+    format('truetype');
 }
 
 *,
@@ -15,11 +25,11 @@
 *::after {
   box-sizing: border-box;
   margin: 0;
+
+  /* Estilos para la barra de scroll */
   scrollbar-width: thin;
   scrollbar-color: rgb(var(--color-salmon-claro) / 0.8) transparent;
   scroll-behavior: smooth;
-
-  /* outline: tomato 1px solid; */
 }
 
 html,
@@ -34,7 +44,6 @@ body {
   flex-wrap: nowrap;
   align-items: center;
   gap: 1.5rem;
-  /* background-color: rgb(var(--color-rosa) / 0.2); */
   background: linear-gradient(
     135deg,
     rgb(var(--color-morado-azul) / 0.5),
@@ -42,7 +51,7 @@ body {
     rgb(var(--color-salmon-claro) / 0.5)
   );
 
-  background-size: 300%;
+  background-size: 200%;
   animation: animarGradiente 15s ease infinite alternate;
 }
 
@@ -56,7 +65,6 @@ body {
 }
 
 header {
-  /* background-color: rgb(var(--color-salmon-claro) / 0.2); */
   background-color: rgba(240, 248, 255, 0.517);
   position: fixed;
   top: 0;
@@ -80,14 +88,38 @@ main {
   padding: 1.5rem;
   background-color: aliceblue;
   border-radius: 5px;
-  /* height: 60vh; */
 }
 
 footer {
-  background-color: rgb(var(--color-salmon-claro) / 0.2);
+  background-color: aliceblue;
   width: 100%;
-  /* height: 20vh; */
   flex: 2;
+
+  & > nav {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 0.5rem;
+
+    & > a {
+      margin: 0.5rem;
+      padding: 0.5rem;
+      color: rgb(var(--color-morado-azul));
+    }
+  }
+
+  & > p {
+    text-align: center;
+    font-size: 0.8rem;
+    color: rgb(var(--color-morado-azul));
+    padding-bottom: 0.7rem;
+  }
+}
+
+.cocoChanel {
+  font-family: miFuenteCoco;
+  color: rgb(var(--color-morado-azul) / 0.5);
+  font-size: 18px;
 }
 
 nav {
@@ -118,6 +150,12 @@ a {
   padding: 5px;
   padding-inline: 18px;
   overflow: hidden;
+  box-shadow: 0px 0px 4px rgb(var(--color-morado-azul) / 0.5),
+    0px 0px 15px rgb(var(--color-rosa) / 0.5);
+
+  &:active {
+    color: rgb(255, 255, 255);
+  }
 
   svg {
     width: 25px;
@@ -132,7 +170,12 @@ a {
     bottom: 0;
     left: 0;
     z-index: -1;
-    background-color: rgb(var(--color-rosa));
+    background: linear-gradient(
+      150deg,
+      rgb(var(--color-morado-azul) / 0.5) 30%,
+      rgb(var(--color-rosa) / 0.5),
+      rgb(var(--color-salmon-claro) / 0.5)
+    );
     border-radius: 50% 50% 0 0;
   }
 
@@ -145,6 +188,7 @@ a {
 .enlaceLogo {
   border: none;
   overflow: visible;
+  box-shadow: none;
 
   &:hover::before {
     height: 0;

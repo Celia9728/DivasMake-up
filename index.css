@@ -1,9 +1,8 @@
 main {
   display: grid;
   justify-items: center;
-  align-items: self-start;
 
-  grid-template-rows: 240px 710px 2fr;
+  grid-template-rows: 240px auto auto;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas:
     'fotos fotos fotos'
@@ -50,7 +49,7 @@ iframe {
   }
 
   &:has(img:hover) > img:not(:hover) {
-    filter: grayscale(1);
+    filter: blur(3px);
     scale: 0.98;
     transition: filter, scale 0.2s ease-in;
   }
@@ -96,18 +95,19 @@ aside {
   border-radius: 10px;
   text-align: center;
 }
+
 .banner {
-  width: 100%; /* Ajusta al 50% del contenedor */
-  height: auto; /* Mantiene la proporción */
+  width: 100%;
+  height: auto;
 }
 
 .promo {
   align-items: center;
-  width: 120; /* Ajusta al 50% del contenedor */
-  height: auto; /* Mantiene la proporción */
+  width: 120;
+  height: auto;
 }
 
 .oferta {
-  width: 100%; /* Ajusta al 50% del contenedor */
-  height: auto; /* Mantiene la proporción */
+  width: 100%;
+  height: auto;
 }
