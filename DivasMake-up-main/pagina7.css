@@ -1,0 +1,27 @@
+h3{text-align: center;
+    
+}
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+ 
+summary {
+    list-style:none;
+     background-color:rgb(var(--color-rosa)); 
+    color: white; 
+    font-weight: bold;
+    padding: 5px;
+    cursor: pointer; 
+    border-radius: 3px;
+}
+
+details {
+    background-color:white; 
+    color: rgb(var(--color-salmon)); 
+    padding: 10px;
+    border-radius: 5px; 
+}

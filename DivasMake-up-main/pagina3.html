@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Tienda</title>
+    <link
+      rel="icon"
+      href="imagenes/logo.png"
+    />
+    <meta
+      name="author"
+      content="Noemí"
+    />
+    <meta
+      name="description"
+      content="Página sobre nuestros productos"
+    />
+    <meta
+      name="keywords"
+      content="ojos, mascarillas, pintalabios, pintaunias"
+    />
+    <link
+      rel="stylesheet"
+      href="estilosGlobales.css"
+    />
+    <link
+      rel="stylesheet"
+      href="pagina3.css"
+    />
+  </head>
+  <body>
+    <!-- Cabecera de la página donde aparece el logo y la navegacion -->
+    <header>
+      <nav
+        class="navegacion1"
+        aria-label="Navegación principal"
+      >
+        <a
+          href="index.html"
+          class="enlaceLogo"
+        >
+          <img
+            src="imagenes/logo.png"
+            alt="Logo DivasMakeUp"
+            title="Logo DivasMakeUp"
+            id="inicio"
+          />
+        </a>
+        <a href="presentacion.html">Presentación</a>
+        <a href="pagina2.html">¿Quiénes somos?</a>
+        <a href="pagina3.html">Tienda</a>
+        <a href="pagina4.html">Comparador</a>
+        <a href="pagina5.html">Presupuesto</a>
+      </nav>
+
+      <nav
+        class="navegacion2"
+        aria-label="Navegación accesos rápidos"
+      >
+        <a
+          href="pagina1.html"
+          aria-label="Tienda"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-shop"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.37 2.37 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0M1.5 8.5A.5.5 0 0 1 2 9v6h1v-5a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v5h6V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5M4 15h3v-5H4zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1zm3 0h-2v3h2z"
+            />
+          </svg>
+        </a>
+
+        <a
+          href="pagina6.html"
+          aria-label="Contacto"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-envelope"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"
+            />
+          </svg>
+        </a>
+
+        <a
+          href="pagina7.html"
+          aria-label="Ayuda"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-question-lg"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M4.475 5.458c-.284 0-.514-.237-.47-.517C4.28 3.24 5.576 2 7.825 2c2.25 0 3.767 1.36 3.767 3.215 0 1.344-.665 2.288-1.79 2.973-1.1.659-1.414 1.118-1.414 2.01v.03a.5.5 0 0 1-.5.5h-.77a.5.5 0 0 1-.5-.495l-.003-.2c-.043-1.221.477-2.001 1.645-2.712 1.03-.632 1.397-1.135 1.397-2.028 0-.979-.758-1.698-1.926-1.698-1.009 0-1.71.529-1.938 1.402-.066.254-.278.461-.54.461h-.777ZM7.496 14c.622 0 1.095-.474 1.095-1.09 0-.618-.473-1.092-1.095-1.092-.606 0-1.087.474-1.087 1.091S6.89 14 7.496 14"
+            />
+          </svg>
+        </a>
+      </nav>
+    </header>
+
+    <!-- Cuerpo de la página donde aparece el contenido -->
+    <main>
+      <h1>Bienvenidas a nuestra tienda &#128132; &#128133;</h1>
+
+      <!--CATEGORÍA OJOS-->
+      <details>
+        <summary>CATEGORÍA OJOS</summary>
+        <table border="1">
+          <caption>
+            TIENDA CATEGORÍA OJOS &#128065;
+          </caption>
+          <thead>
+            <tr>
+              <th>Producto</th>
+              <th>Nombre</th>
+              <th>Categoría</th>
+              <th>Características</th>
+              <th>Color</th>
+              <th>Precio</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!--OJOS HYPNOSE-->
+            <tr>
+              <td>
+                <img
+                  src="imagenes/ojos_hypnose_drama.png"
+                  alt="logo"
+                  width="170"
+                  height="300"
+                />
+              </td>
+              <td>Hypnôse Drama</td>
+              <td>Máscara de pestañas</td>
+              <td>
+                <ul>
+                  <li>Hasta 17 veces más volumen</li>
+                  <li>Las pestañas se sienten fortalecidas</li>
+                  <li>Color negro intenso</li>
+                  <li>Hasta 24 horas de duración</li>
+                </ul>
+                <p>Disponible en tamaño viaje y tamaño original</p>
+              </td>
+              <td>
+                Colores disponibles <br />
+                <input
+                  type="color"
+                  value="#000000"
+                  disabled
+                />
+              </td>
+              <td>28 &#8364;</td>
+            </tr>
+
+            <!--OJOS LASH IDOLE-->
+            <tr>
+              <td>
+                <img
+                  src="imagenes/ojos_lash_idole.png"
+                  alt="logo"
+                  width="170"
+                  height="300"
+                />
+              </td>
+              <td>Lash Ídole</td>
+              <td>Máscara de pestañas</td>
+              <td>
+                <ul>
+                  <li>Volumen revelador</li>
+                  <li>Pestañas definididas</li>
+                  <li>Pestañas extendidas y alargadas</li>
+                  <li>Textura suave y ligera</li>
+                </ul>
+                <p>Disponible en tamaño viaje y tamaño original</p>
+              </td>
+              <td>
+                Colores disponibles <br />
+                <input
+                  type="color"
+                  value="#5E3D31"
+                  disabled
+                />
+                <br />
+                <br />
+                <input
+                  type="color"
+                  value="#000000"
+                  disabled
+                />
+              </td>
+              <td>26.60 &#8364;</td>
+            </tr>
+          </tbody>
+        </table>
+      </details>
+
+      <!--CATEGORÍA LABIOS-->
+      <details>
+        <summary>CATEGORÍA LABIOS</summary>
+        <table border="1">
+          <caption>
+            TIENDA CATEGORÍA LABIOS &#128068;
+          </caption>
+          <thead>
+            <tr>
+              <th>Producto</th>
+              <th>Nombre</th>
+              <th>Categoría</th>
+              <th>Características</th>
+              <th>Color</th>
+              <th>Precio</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!--LABIOS FENTY ROSA-->
+            <tr>
+              <td>
+                <img
+                  src="imagenes/labios_fenty.png"
+                  alt="labios stix"
+                  width="170"
+                  height="300"
+                />
+              </td>
+              <td>Gloss Bomb Stix</td>
+              <td>Barra de labios y gloss</td>
+              <td>
+                <ul>
+                  <li>Fórmula nutritiva no pegajosa</li>
+                  <li>Pigmentación media</li>
+                  <li>Brillo intenso</li>
+                  <li>Hidratación hasta 8 horas</li>
+                  <li>
+                    Enriquecido con escualano, vitamina E, manteca de karité y
+                    aceite de semilla de kiwi
+                  </li>
+                </ul>
+                <p>Disponible en tamaño viaje y tamaño original</p>
+              </td>
+              <td>
+                Colores disponibles <br />
+                <input
+                  type="color"
+                  value="#C9767C"
+                  disabled
+                />
+                <br />
+                <input
+                  type="color"
+                  value="#7A3C4A"
+                  disabled
+                />
+                <br />
+                <input
+                  type="color"
+                  value="#BC0118"
+                  disabled
+                />
+              </td>
+              <td>23.99 &#8364;</td>
+            </tr>
+
+            <!--LABIOS FENTY LETRAS-->
+            <tr>
+              <td>
+                <img
+                  src="imagenes/P10051031_principal.avif"
+                  alt="labios cream"
+                  width="170"
+                  height="300"
+                />
+              </td>
+              <td>Gloss Bomb Cream</td>
+              <td>Brillo de labios lacado</td>
+              <td>
+                <ul>
+                  <li>Color sin purpurina en cinco tonos cremosos</li>
+                  <li>Pigmento ajustable de alta intensidad</li>
+                  <li>Brillo</li>
+                  <li>Fórmula no pegajosa</li>
+                  <li>Aplicador XXL para una aplicación en un solo paso</li>
+                  <li>
+                    Contiene vitamina A y una ligera fragancia de melocotón y
+                    vainilla
+                  </li>
+                </ul>
+                <p>Disponible en tamaño viaje y tamaño original</p>
+              </td>
+              <td>
+                Colores disponibles <br />
+                <input
+                  type="color"
+                  value="#623425"
+                  disabled
+                />
+                <br />
+                <input
+                  type="color"
+                  value="#B68792"
+                  disabled
+                />
+                <br />
+                <input
+                  type="color"
+                  value="#742524"
+                  disabled
+                />
+              </td>
+              <td>22.99 &#8364;</td>
+            </tr>
+          </tbody>
+        </table>
+      </details>
+
+      <!--CATEGORÍA UÑAS-->
+      <details>
+        <summary>CATEGORÍA UÑAS</summary>
+        <table border="1">
+          <caption>
+            TIENDA CATEGORÍA UÑAS &#128133;
+          </caption>
+          <thead>
+            <tr>
+              <th>Producto</th>
+              <th>Nombre</th>
+              <th>Categoría</th>
+              <th>Características</th>
+              <th>Color</th>
+              <th>Precio</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!--UÑAS BRILLO -->
+            <tr>
+              <td>
+                <img
+                  src="imagenes/descarga.jpg"
+                  alt="unas brillo"
+                  width="170"
+                  height="300"
+                />
+              </td>
+              <td>Blue me biodegradable glitter top coat</td>
+              <td>Laca de uñas</td>
+              <td>
+                <ul>
+                  <li>Fórmula vegana y transpirable</li>
+                  <li>Duración de hasta 7 días con base <em>top coat</em></li>
+                  <li>
+                    Alta concentración de pigmentos para crear efecto brillo
+                  </li>
+                  <li>Pincel con cerdas largas de corte redondo</li>
+                  <li>
+                    Máxima precisión para optimizar la pigmentación, la
+                    cobertura y la intensidad
+                  </li>
+                </ul>
+                <p>Disponible en tamaño viaje y tamaño original</p>
+              </td>
+              <td>
+                Colores disponibles <br />
+                <input
+                  type="color"
+                  value="#657F82"
+                  disabled
+                />
+              </td>
+              <td>2.00 &#8364;</td>
+            </tr>
+
+            <!--UÑAS CARNE-->
+            <tr>
+              <td>
+                <img
+                  src="imagenes/descarga (1).jpg"
+                  alt="unas carne"
+                  width="170"
+                  height="300"
+                />
+              </td>
+              <td>Breather nail lacquer</td>
+              <td>Laca de uñas</td>
+              <td>
+                <ul>
+                  <li>
+                    Fórmula vegana enriquecida con purpuina biodegradable
+                    plateada y azul
+                  </li>
+                  <li>
+                    Puede utilizarse solo o para dar un toque brillante sobre
+                    otro esmalte
+                  </li>
+                  <li>
+                    Alta concentración de pigmentos para crear efecto brillo
+                  </li>
+                  <li>
+                    Se combina con esmaltes en diferentes tonos para dar un
+                    brillo extraordinario
+                  </li>
+                  <li>
+                    Fácil de aplicar gracias a su pincel con cerdas largas de
+                    corte redondo
+                  </li>
+                </ul>
+                <p>Disponible en tamaño viaje y tamaño original</p>
+                <p>Disponible en efecto brillo y mate</p>
+              </td>
+              <td>
+                Colores disponibles <br />
+                <input
+                  type="color"
+                  value="#F5D8D9"
+                  disabled
+                />
+                <br />
+                <input
+                  type="color"
+                  value="#FECEA3"
+                  disabled
+                />
+                <br />
+                <input
+                  type="color"
+                  value="#D02E32"
+                  disabled
+                />
+              </td>
+              <td>5.59 &#8364;</td>
+            </tr>
+          </tbody>
+        </table>
+      </details>
+
+      <!--CATEGORÍA FACIAL-->
+      <details>
+        <summary>CATEGORÍA FACIAL</summary>
+        <table border="1">
+          <caption>
+            TIENDA CATEGORIA FACIAL &#129494;
+          </caption>
+          <thead>
+            <tr>
+              <th>Producto</th>
+              <th>Nombre</th>
+              <th>Categoría</th>
+              <th>Características</th>
+              <th>Precio</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!--MASCARILLA FACIAL VERDE-->
+            <tr>
+              <td>
+                <img
+                  src="imagenes/cara_mascarilla_verde.png"
+                  alt="facial verde"
+                  width="170"
+                  height="300"
+                />
+              </td>
+              <td>
+                Mascarilla Facial Hydra Bomb Super Hidratante Matificante con
+                Ácido Hialurónico
+              </td>
+              <td>Mascarilla facial</td>
+              <td>
+                <ul>
+                  <li>Pieles mixtas y grasas</li>
+                  <li>Fórmula vegana</li>
+                  <li>
+                    Contiene extracto de Té Verde, Ácido Hialurónico y Sérum
+                    Hidratante
+                  </li>
+                  <li>Refrescan y matifican la piel</li>
+                  <li>
+                    Piel intensamente hidratada, matificada y re-equilibrada en
+                    15 minutos
+                  </li>
+                </ul>
+              </td>
+
+              <td>2.49 &#8364;</td>
+            </tr>
+
+            <!--MASCARILLA FACIAL ROSA-->
+            <tr>
+              <td>
+                <img
+                  src="imagenes/cara_mascarilla_rosa.png"
+                  alt="facial rosa"
+                  width="170"
+                  height="300"
+                />
+              </td>
+              <td>
+                Mascarilla Facial Hydra Bomb Super Hidratante Calmante con Ácido
+                Hialurónico
+              </td>
+              <td>Mascarilla facial</td>
+              <td>
+                <ul>
+                  <li>Tejido súper hidratante</li>
+                  <li>
+                    Fórmula que te aporta el equivalente a una semana de sérum
+                  </li>
+                  <li>Ideal para pieles secas y sensibles</li>
+                  <li>Extracto de Camomila y ÁCido Hialurónico</li>
+                  <li>Refresca y calma la piel</li>
+                  <li>Testado dermatológicamente</li>
+                </ul>
+              </td>
+              <td>2.49 &#8364;</td>
+            </tr>
+          </tbody>
+        </table>
+      </details>
+      <hr />
+    </main>
+    <!-- Pie de la página donde aparecen las redes sociales -->
+    <footer>
+      <nav>
+        <a
+          href="#inicio"
+          class="enlaceLogo"
+        >
+          <img
+            src="imagenes/logo.png"
+            alt="Logo DivasMakeUp"
+            title="Logo DivasMakeUp"
+          />
+        </a>
+        <a
+          href="https://www.instagram.com/"
+          target="_blank"
+        >
+          <img
+            src="icons/instagram.svg"
+            alt="Logo de Instagram"
+            title="Logo Insta"
+          />
+        </a>
+        <a
+          href="https://www.tiktok.com/"
+          target="_blank"
+        >
+          <img
+            src="icons/tiktok.svg"
+            alt="Logo de Tiktok"
+            title="Logo Tiktok"
+          />
+        </a>
+        <a
+          href="https://www.youtube.com/"
+          target="_blank"
+        >
+          <img
+            src="icons/youtube.svg"
+            alt="Logo de YouTube"
+            title="Logo Youtube"
+          />
+        </a>
+      </nav>
+
+      <p>
+        <q
+          ><em
+            >La belleza comienza en el momento en el que decides ser tú
+            misma.</em
+          ></q
+        >
+      </p>
+    </footer>
+  </body>
+</html>
